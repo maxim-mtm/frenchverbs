@@ -1,0 +1,772 @@
+[
+  {
+    "infinitive": "avoir",
+    "translation": "haben",
+    "irregularities": [],
+    "conjugations": {
+      "present": { "je": "ai", "tu": "as", "il": "a", "nous": "avons", "vous": "avez", "ils": "ont" },
+      "imparfait": { "je": "avais", "tu": "avais", "il": "avait", "nous": "avions", "vous": "aviez", "ils": "avaient" },
+      "passe_compose": { "je": "ai eu", "tu": "as eu", "il": "a eu", "nous": "avons eu", "vous": "avez eu", "ils": "ont eu" }
+    }
+  },
+  {
+    "infinitive": "être",
+    "translation": "sein",
+    "irregularities": [],
+    "conjugations": {
+      "present": { "je": "suis", "tu": "es", "il": "est", "nous": "sommes", "vous": "êtes", "ils": "sont" },
+      "imparfait": { "je": "étais", "tu": "étais", "il": "était", "nous": "étions", "vous": "étiez", "ils": "étaient" },
+      "passe_compose": { "je": "ai été", "tu": "as été", "il": "a été", "nous": "avons été", "vous": "avez été", "ils": "ont été" }
+    }
+  },
+  {
+    "infinitive": "aller",
+    "translation": "gehen",
+    "irregularities": ["etre_auxiliary"],
+    "conjugations": {
+      "present": { "je": "vais", "tu": "vas", "il": "va", "nous": "allons", "vous": "allez", "ils": "vont" },
+      "imparfait": { "je": "allais", "tu": "allais", "il": "allait", "nous": "allions", "vous": "alliez", "ils": "allaient" },
+      "passe_compose": { "je": "suis allé(e)", "tu": "es allé(e)", "il": "est allé", "nous": "sommes allé(e)s", "vous": "êtes allé(e)(s)", "ils": "sont allé(s)" }
+    }
+  },
+  {
+    "infinitive": "manger",
+    "translation": "essen",
+    "irregularities": [],
+    "conjugations": {
+      "present": { "je": "mange", "tu": "manges", "il": "mange", "nous": "mangeons", "vous": "mangez", "ils": "mangent" },
+      "imparfait": { "je": "mangeais", "tu": "mangeais", "il": "mangeait", "nous": "mangions", "vous": "mangiez", "ils": "mangeaient" },
+      "passe_compose": { "je": "ai mangé", "tu": "as mangé", "il": "a mangé", "nous": "avons mangé", "vous": "avez mangé", "ils": "ont mangé" }
+    }
+  },
+  {
+    "infinitive": "commencer",
+    "translation": "beginnen",
+    "irregularities": [],
+    "conjugations": {
+      "present": { "je": "commence", "tu": "commences", "il": "commence", "nous": "commençons", "vous": "commencez", "ils": "commencent" },
+      "imparfait": { "je": "commençais", "tu": "commençais", "il": "commençait", "nous": "commencions", "vous": "commenciez", "ils": "commençaient" },
+      "passe_compose": { "je": "ai commencé", "tu": "as commencé", "il": "a commencé", "nous": "avons commencé", "vous": "avez commencé", "ils": "ont commencé" }
+    }
+  },
+  {
+    "infinitive": "nettoyer",
+    "translation": "putzen",
+    "irregularities": ["stem_change"],
+    "conjugations": {
+      "present": { "je": "nettoie", "tu": "nettoies", "il": "nettoie", "nous": "nettoyons", "vous": "nettoyez", "ils": "nettoient" },
+      "imparfait": { "je": "nettoyais", "tu": "nettoyais", "il": "nettoyait", "nous": "nettoyions", "vous": "nettoyiez", "ils": "nettoyaient" },
+      "passe_compose": { "je": "ai nettoyé", "tu": "as nettoyé", "il": "a nettoyé", "nous": "avons nettoyé", "vous": "avez nettoyé", "ils": "ont nettoyé" }
+    }
+  },
+  {
+    "infinitive": "se lever",
+    "translation": "aufstehen",
+    "irregularities": ["reflexive", "etre_auxiliary", "stem_change"],
+    "conjugations": {
+      "present": { "je": "me lève", "tu": "te lèves", "il": "se lève", "nous": "nous levons", "vous": "vous levez", "ils": "se lèvent" },
+      "imparfait": { "je": "me levais", "tu": "te levais", "il": "se levait", "nous": "nous levions", "vous": "vous leviez", "ils": "se levaient" },
+      "passe_compose": { "je": "me suis levé(e)", "tu": "t'es levé(e)", "il": "s'est levé", "nous": "nous sommes levé(e)s", "vous": "vous êtes levé(e)(s)", "ils": "se sont levé(s)" }
+    }
+  },
+  {
+    "infinitive": "répéter",
+    "translation": "wiederholen",
+    "irregularities": ["stem_change"],
+    "conjugations": {
+      "present": { "je": "répète", "tu": "répètes", "il": "répète", "nous": "répétons", "vous": "répétez", "ils": "répètent" },
+      "imparfait": { "je": "répétais", "tu": "répétais", "il": "répétait", "nous": "répétions", "vous": "répétiez", "ils": "répétaient" },
+      "passe_compose": { "je": "ai répété", "tu": "as répété", "il": "a répété", "nous": "avons répété", "vous": "avez répété", "ils": "ont répété" }
+    }
+  },
+  {
+    "infinitive": "jeter",
+    "translation": "werfen",
+    "irregularities": ["stem_change"],
+    "conjugations": {
+      "present": { "je": "jette", "tu": "jettes", "il": "jette", "nous": "jetons", "vous": "jetez", "ils": "jettent" },
+      "imparfait": { "je": "jetais", "tu": "jetais", "il": "jetait", "nous": "jetions", "vous": "jetiez", "ils": "jetaient" },
+      "passe_compose": { "je": "ai jeté", "tu": "as jeté", "il": "a jeté", "nous": "avons jeté", "vous": "avez jeté", "ils": "ont jeté" }
+    }
+  },
+  {
+    "infinitive": "appeler",
+    "translation": "rufen",
+    "irregularities": ["stem_change"],
+    "conjugations": {
+      "present": { "je": "appelle", "tu": "appelles", "il": "appelle", "nous": "appelons", "vous": "appelez", "ils": "appellent" },
+      "imparfait": { "je": "appelais", "tu": "appelais", "il": "appelait", "nous": "appelions", "vous": "appeliez", "ils": "appelaient" },
+      "passe_compose": { "je": "ai appelé", "tu": "as appelé", "il": "a appelé", "nous": "avons appelé", "vous": "avez appelé", "ils": "ont appelé" }
+    }
+  },
+  {
+    "infinitive": "s'appeler",
+    "translation": "heißen",
+    "irregularities": ["reflexive", "etre_auxiliary", "stem_change"],
+    "conjugations": {
+      "present": { "je": "m'appelle", "tu": "t'appelles", "il": "s'appelle", "nous": "nous appelons", "vous": "vous appelez", "ils": "s'appellent" },
+      "imparfait": { "je": "m'appelais", "tu": "t'appelais", "il": "s'appelait", "nous": "nous appelions", "vous": "vous appeliez", "ils": "s'appelaient" },
+      "passe_compose": { "je": "me suis appelé(e)", "tu": "t'es appelé(e)", "il": "s'est appelé", "nous": "nous sommes appelé(e)s", "vous": "vous êtes appelé(e)(s)", "ils": "se sont appelé(s)" }
+    }
+  },
+  {
+    "infinitive": "couvrir",
+    "translation": "bedecken",
+    "irregularities": ["irregular_conjugation"],
+    "conjugations": {
+      "present": { "je": "couvre", "tu": "couvres", "il": "couvre", "nous": "couvrons", "vous": "couvrez", "ils": "couvrent" },
+      "imparfait": { "je": "couvrais", "tu": "couvrais", "il": "couvrait", "nous": "couvrions", "vous": "couvriez", "ils": "couvraient" },
+      "passe_compose": { "je": "ai couvert", "tu": "as couvert", "il": "a couvert", "nous": "avons couvert", "vous": "avez couvert", "ils": "ont couvert" }
+    }
+  },
+  {
+    "infinitive": "cueillir",
+    "translation": "pflücken",
+    "irregularities": ["irregular_conjugation"],
+    "conjugations": {
+      "present": { "je": "cueille", "tu": "cueilles", "il": "cueille", "nous": "cueillons", "vous": "cueillez", "ils": "cueillent" },
+      "imparfait": { "je": "cueillais", "tu": "cueillais", "il": "cueillait", "nous": "cueillions", "vous": "cueilliez", "ils": "cueillaient" },
+      "passe_compose": { "je": "ai cueilli", "tu": "as cueilli", "il": "a cueilli", "nous": "avons cueilli", "vous": "avez cueilli", "ils": "ont cueilli" }
+    }
+  },
+  {
+    "infinitive": "offrir",
+    "translation": "anbieten",
+    "irregularities": ["irregular_conjugation"],
+    "conjugations": {
+      "present": { "je": "offre", "tu": "offres", "il": "offre", "nous": "offrons", "vous": "offrez", "ils": "offrent" },
+      "imparfait": { "je": "offrais", "tu": "offrais", "il": "offrait", "nous": "offrions", "vous": "offriez", "ils": "offraient" },
+      "passe_compose": { "je": "ai offert", "tu": "as offert", "il": "a offert", "nous": "avons offert", "vous": "avez offert", "ils": "ont offert" }
+    }
+  },
+  {
+    "infinitive": "souffrir",
+    "translation": "leiden",
+    "irregularities": ["irregular_conjugation"],
+    "conjugations": {
+      "present": { "je": "souffre", "tu": "souffres", "il": "souffre", "nous": "souffrons", "vous": "souffrez", "ils": "souffrent" },
+      "imparfait": { "je": "souffrais", "tu": "souffrais", "il": "souffrait", "nous": "souffrions", "vous": "souffriez", "ils": "souffraient" },
+      "passe_compose": { "je": "ai souffert", "tu": "as souffert", "il": "a souffert", "nous": "avons souffert", "vous": "avez souffert", "ils": "ont souffert" }
+    }
+  },
+  {
+    "infinitive": "mourir",
+    "translation": "sterben",
+    "irregularities": ["etre_auxiliary", "stem_change"],
+    "conjugations": {
+      "present": { "je": "meurs", "tu": "meurs", "il": "meurt", "nous": "mourons", "vous": "mourez", "ils": "meurent" },
+      "imparfait": { "je": "mourais", "tu": "mourais", "il": "mourait", "nous": "mourions", "vous": "mouriez", "ils": "mouraient" },
+      "passe_compose": { "je": "suis mort(e)", "tu": "es mort(e)", "il": "est mort", "nous": "sommes mort(e)s", "vous": "êtes mort(e)(s)", "ils": "sont mort(s)" }
+    }
+  },
+  {
+    "infinitive": "courir",
+    "translation": "laufen",
+    "irregularities": ["stem_change"],
+    "conjugations": {
+      "present": { "je": "cours", "tu": "cours", "il": "court", "nous": "courons", "vous": "courez", "ils": "courent" },
+      "imparfait": { "je": "courais", "tu": "courais", "il": "courait", "nous": "courions", "vous": "couriez", "ils": "couraient" },
+      "passe_compose": { "je": "ai couru", "tu": "as couru", "il": "a couru", "nous": "avons couru", "vous": "avez couru", "ils": "ont couru" }
+    }
+  },
+  {
+    "infinitive": "venir",
+    "translation": "kommen",
+    "irregularities": ["etre_auxiliary", "stem_change"],
+    "conjugations": {
+      "present": { "je": "viens", "tu": "viens", "il": "vient", "nous": "venons", "vous": "venez", "ils": "viennent" },
+      "imparfait": { "je": "venais", "tu": "venais", "il": "venait", "nous": "venions", "vous": "veniez", "ils": "venaient" },
+      "passe_compose": { "je": "suis venu(e)", "tu": "es venu(e)", "il": "est venu", "nous": "sommes venu(e)s", "vous": "êtes venu(e)(s)", "ils": "sont venu(s)" }
+    }
+  },
+  {
+    "infinitive": "devenir",
+    "translation": "werden",
+    "irregularities": ["etre_auxiliary", "stem_change"],
+    "conjugations": {
+      "present": { "je": "deviens", "tu": "deviens", "il": "devient", "nous": "devenons", "vous": "devenez", "ils": "deviennent" },
+      "imparfait": { "je": "devenais", "tu": "devenais", "il": "devenait", "nous": "devenions", "vous": "deveniez", "ils": "devenaient" },
+      "passe_compose": { "je": "suis devenu(e)", "tu": "es devenu(e)", "il": "est devenu", "nous": "sommes devenu(e)s", "vous": "êtes devenu(e)(s)", "ils": "sont devenu(s)" }
+    }
+  },
+  {
+    "infinitive": "tenir",
+    "translation": "halten",
+    "irregularities": ["stem_change"],
+    "conjugations": {
+      "present": { "je": "tiens", "tu": "tiens", "il": "tient", "nous": "tenons", "vous": "tenez", "ils": "tiennent" },
+      "imparfait": { "je": "tenais", "tu": "tenais", "il": "tenait", "nous": "tenions", "vous": "teniez", "ils": "tenaient" },
+      "passe_compose": { "je": "ai tenu", "tu": "as tenu", "il": "a tenu", "nous": "avons tenu", "vous": "avez tenu", "ils": "ont tenu" }
+    }
+  },
+  {
+    "infinitive": "finir",
+    "translation": "beenden",
+    "irregularities": [],
+    "conjugations": {
+      "present": { "je": "finis", "tu": "finis", "il": "finit", "nous": "finissons", "vous": "finissez", "ils": "finissent" },
+      "imparfait": { "je": "finissais", "tu": "finissais", "il": "finissait", "nous": "finissions", "vous": "finissiez", "ils": "finissaient" },
+      "passe_compose": { "je": "ai fini", "tu": "as fini", "il": "a fini", "nous": "avons fini", "vous": "avez fini", "ils": "ont fini" }
+    }
+  },
+  {
+    "infinitive": "choisir",
+    "translation": "wählen",
+    "irregularities": [],
+    "conjugations": {
+      "present": { "je": "choisis", "tu": "choisis", "il": "choisit", "nous": "choisissons", "vous": "choisissez", "ils": "choisissent" },
+      "imparfait": { "je": "choisissais", "tu": "choisissais", "il": "choisissait", "nous": "choisissions", "vous": "choisissiez", "ils": "choisissaient" },
+      "passe_compose": { "je": "ai choisi", "tu": "as choisi", "il": "a choisi", "nous": "avons choisi", "vous": "avez choisi", "ils": "ont choisi" }
+    }
+  },
+  {
+    "infinitive": "obéir",
+    "translation": "gehorchen",
+    "irregularities": [],
+    "conjugations": {
+      "present": { "je": "obéis", "tu": "obéis", "il": "obéit", "nous": "obéissons", "vous": "obéissez", "ils": "obéissent" },
+      "imparfait": { "je": "obéissais", "tu": "obéissais", "il": "obéissait", "nous": "obéissions", "vous": "obéissiez", "ils": "obéissaient" },
+      "passe_compose": { "je": "ai obéi", "tu": "as obéi", "il": "a obéi", "nous": "avons obéi", "vous": "avez obéi", "ils": "ont obéi" }
+    }
+  },
+  {
+    "infinitive": "maigrir",
+    "translation": "abnehmen",
+    "irregularities": [],
+    "conjugations": {
+      "present": { "je": "maigris", "tu": "maigris", "il": "maigrit", "nous": "maigrissons", "vous": "maigrissez", "ils": "maigrissent" },
+      "imparfait": { "je": "maigrissais", "tu": "maigrissais", "il": "maigrissait", "nous": "maigrissions", "vous": "maigrissiez", "ils": "maigrissaient" },
+      "passe_compose": { "je": "ai maigri", "tu": "as maigri", "il": "a maigri", "nous": "avons maigri", "vous": "avez maigri", "ils": "ont maigri" }
+    }
+  },
+  {
+    "infinitive": "punir",
+    "translation": "bestrafen",
+    "irregularities": [],
+    "conjugations": {
+      "present": { "je": "punis", "tu": "punis", "il": "punit", "nous": "punissons", "vous": "punissez", "ils": "punissent" },
+      "imparfait": { "je": "punissais", "tu": "punissais", "il": "punissait", "nous": "punissions", "vous": "punissiez", "ils": "punissaient" },
+      "passe_compose": { "je": "ai puni", "tu": "as puni", "il": "a puni", "nous": "avons puni", "vous": "avez puni", "ils": "ont puni" }
+    }
+  },
+  {
+    "infinitive": "attendre",
+    "translation": "warten",
+    "irregularities": [],
+    "conjugations": {
+      "present": { "je": "attends", "tu": "attends", "il": "attend", "nous": "attendons", "vous": "attendez", "ils": "attendent" },
+      "imparfait": { "je": "attendais", "tu": "attendais", "il": "attendait", "nous": "attendions", "vous": "attendiez", "ils": "attendaient" },
+      "passe_compose": { "je": "ai attendu", "tu": "as attendu", "il": "a attendu", "nous": "avons attendu", "vous": "avez attendu", "ils": "ont attendu" }
+    }
+  },
+  {
+    "infinitive": "descendre",
+    "translation": "heruntergehen",
+    "irregularities": ["etre_auxiliary"],
+    "conjugations": {
+      "present": { "je": "descends", "tu": "descends", "il": "descend", "nous": "descendons", "vous": "descendez", "ils": "descendent" },
+      "imparfait": { "je": "descendais", "tu": "descendais", "il": "descendait", "nous": "descendions", "vous": "descendiez", "ils": "descendaient" },
+      "passe_compose": { "je": "suis descendu(e)", "tu": "es descendu(e)", "il": "est descendu", "nous": "sommes descendu(e)s", "vous": "êtes descendu(e)(s)", "ils": "sont descendu(s)" }
+    }
+  },
+  {
+    "infinitive": "entendre",
+    "translation": "hören",
+    "irregularities": [],
+    "conjugations": {
+      "present": { "je": "entends", "tu": "entends", "il": "entend", "nous": "entendons", "vous": "entendez", "ils": "entendent" },
+      "imparfait": { "je": "entendais", "tu": "entendais", "il": "entendait", "nous": "entendions", "vous": "entendiez", "ils": "entendaient" },
+      "passe_compose": { "je": "ai entendu", "tu": "as entendu", "il": "a entendu", "nous": "avons entendu", "vous": "avez entendu", "ils": "ont entendu" }
+    }
+  },
+  {
+    "infinitive": "perdre",
+    "translation": "verlieren",
+    "irregularities": [],
+    "conjugations": {
+      "present": { "je": "perds", "tu": "perds", "il": "perd", "nous": "perdons", "vous": "perdez", "ils": "perdent" },
+      "imparfait": { "je": "perdais", "tu": "perdais", "il": "perdait", "nous": "perdions", "vous": "perdiez", "ils": "perdaient" },
+      "passe_compose": { "je": "ai perdu", "tu": "as perdu", "il": "a perdu", "nous": "avons perdu", "vous": "avez perdu", "ils": "ont perdu" }
+    }
+  },
+  {
+    "infinitive": "répondre",
+    "translation": "antworten",
+    "irregularities": [],
+    "conjugations": {
+      "present": { "je": "réponds", "tu": "réponds", "il": "répond", "nous": "répondons", "vous": "répondez", "ils": "répondent" },
+      "imparfait": { "je": "répondais", "tu": "répondais", "il": "répondait", "nous": "répondions", "vous": "répondiez", "ils": "répondaient" },
+      "passe_compose": { "je": "ai répondu", "tu": "as répondu", "il": "a répondu", "nous": "avons répondu", "vous": "avez répondu", "ils": "ont répondu" }
+    }
+  },
+  {
+    "infinitive": "vendre",
+    "translation": "verkaufen",
+    "irregularities": [],
+    "conjugations": {
+      "present": { "je": "vends", "tu": "vends", "il": "vend", "nous": "vendons", "vous": "vendez", "ils": "vendent" },
+      "imparfait": { "je": "vendais", "tu": "vendais", "il": "vendait", "nous": "vendions", "vous": "vendiez", "ils": "vendaient" },
+      "passe_compose": { "je": "ai vendu", "tu": "as vendu", "il": "a vendu", "nous": "avons vendu", "vous": "avez vendu", "ils": "ont vendu" }
+    }
+  },
+  {
+    "infinitive": "faire",
+    "translation": "machen",
+    "irregularities": ["irregular_conjugation"],
+    "conjugations": {
+      "present": { "je": "fais", "tu": "fais", "il": "fait", "nous": "faisons", "vous": "faites", "ils": "font" },
+      "imparfait": { "je": "faisais", "tu": "faisais", "il": "faisait", "nous": "faisions", "vous": "faisiez", "ils": "faisaient" },
+      "passe_compose": { "je": "ai fait", "tu": "as fait", "il": "a fait", "nous": "avons fait", "vous": "avez fait", "ils": "ont fait" }
+    }
+  },
+  {
+    "infinitive": "dire",
+    "translation": "sagen",
+    "irregularities": ["irregular_conjugation"],
+    "conjugations": {
+      "present": { "je": "dis", "tu": "dis", "il": "dit", "nous": "disons", "vous": "dites", "ils": "disent" },
+      "imparfait": { "je": "disais", "tu": "disais", "il": "disait", "nous": "disions", "vous": "disiez", "ils": "disaient" },
+      "passe_compose": { "je": "ai dit", "tu": "as dit", "il": "a dit", "nous": "avons dit", "vous": "avez dit", "ils": "ont dit" }
+    }
+  },
+  {
+    "infinitive": "écrire",
+    "translation": "schreiben",
+    "irregularities": ["irregular_conjugation"],
+    "conjugations": {
+      "present": { "je": "écris", "tu": "écris", "il": "écrit", "nous": "écrivons", "vous": "écrivez", "ils": "écrivent" },
+      "imparfait": { "je": "écrivais", "tu": "écrivais", "il": "écrivait", "nous": "écrivions", "vous": "écriviez", "ils": "écrivaient" },
+      "passe_compose": { "je": "ai écrit", "tu": "as écrit", "il": "a écrit", "nous": "avons écrit", "vous": "avez écrit", "ils": "ont écrit" }
+    }
+  },
+  {
+    "infinitive": "conduire",
+    "translation": "fahren",
+    "irregularities": ["irregular_conjugation"],
+    "conjugations": {
+      "present": { "je": "conduis", "tu": "conduis", "il": "conduit", "nous": "conduisons", "vous": "conduisez", "ils": "conduisent" },
+      "imparfait": { "je": "conduisais", "tu": "conduisais", "il": "conduisait", "nous": "conduisions", "vous": "conduisiez", "ils": "conduisaient" },
+      "passe_compose": { "je": "ai conduit", "tu": "as conduit", "il": "a conduit", "nous": "avons conduit", "vous": "avez conduit", "ils": "ont conduit" }
+    }
+  },
+  {
+    "infinitive": "construire",
+    "translation": "bauen",
+    "irregularities": ["irregular_conjugation"],
+    "conjugations": {
+      "present": { "je": "construis", "tu": "construis", "il": "construit", "nous": "construisons", "vous": "construisez", "ils": "construisent" },
+      "imparfait": { "je": "construisais", "tu": "construisais", "il": "construisait", "nous": "construisions", "vous": "construisiez", "ils": "construisaient" },
+      "passe_compose": { "je": "ai construit", "tu": "as construit", "il": "a construit", "nous": "avons construit", "vous": "avez construit", "ils": "ont construit" }
+    }
+  },
+  {
+    "infinitive": "traduire",
+    "translation": "übersetzen",
+    "irregularities": ["irregular_conjugation"],
+    "conjugations": {
+      "present": { "je": "traduis", "tu": "traduis", "il": "traduit", "nous": "traduisons", "vous": "traduisez", "ils": "traduisent" },
+      "imparfait": { "je": "traduisais", "tu": "traduisais", "il": "traduisait", "nous": "traduisions", "vous": "traduisez", "ils": "traduisait" },
+      "passe_compose": { "je": "ai traduit", "tu": "as traduit", "il": "a traduit", "nous": "avons traduit", "vous": "avez traduit", "ils": "ont traduit" }
+    }
+  },
+  {
+    "infinitive": "produire",
+    "translation": "produzieren",
+    "irregularities": ["irregular_conjugation"],
+    "conjugations": {
+      "present": { "je": "produis", "tu": "produis", "il": "produit", "nous": "produisons", "vous": "produisez", "ils": "produisent" },
+      "imparfait": { "je": "produisais", "tu": "produisais", "il": "produisait", "nous": "produisions", "vous": "produisez", "ils": "produisaient" },
+      "passe_compose": { "je": "ai produit", "tu": "as produit", "il": "a produit", "nous": "avons produit", "vous": "avez produit", "ils": "ont produit" }
+    }
+  },
+  {
+    "infinitive": "prendre",
+    "translation": "nehmen",
+    "irregularities": ["stem_change"],
+    "conjugations": {
+      "present": { "je": "prends", "tu": "prends", "il": "prend", "nous": "prenons", "vous": "prenez", "ils": "prennent" },
+      "imparfait": { "je": "prenais", "tu": "prenais", "il": "prenait", "nous": "prenions", "vous": "preniez", "ils": "prenaient" },
+      "passe_compose": { "je": "ai pris", "tu": "as pris", "il": "a pris", "nous": "avons pris", "vous": "avez pris", "ils": "ont pris" }
+    }
+  },
+  {
+    "infinitive": "apprendre",
+    "translation": "lernen",
+    "irregularities": ["stem_change"],
+    "conjugations": {
+      "present": { "je": "apprends", "tu": "apprends", "il": "apprend", "nous": "apprenons", "vous": "apprenez", "ils": "apprennent" },
+      "imparfait": { "je": "apprenais", "tu": "apprenais", "il": "apprenait", "nous": "apprenions", "vous": "appreniez", "ils": "apprenaient" },
+      "passe_compose": { "je": "ai appris", "tu": "as appris", "il": "a appris", "nous": "avons appris", "vous": "avez appris", "ils": "ont appris" }
+    }
+  },
+  {
+    "infinitive": "comprendre",
+    "translation": "verstehen",
+    "irregularities": ["stem_change"],
+    "conjugations": {
+      "present": { "je": "comprends", "tu": "comprends", "il": "comprend", "nous": "comprenons", "vous": "comprenez", "ils": "comprennent" },
+      "imparfait": { "je": "comprenais", "tu": "comprenais", "il": "comprenait", "nous": "comprenions", "vous": "compreniez", "ils": "comprenaient" },
+      "passe_compose": { "je": "ai compris", "tu": "as compris", "il": "a compris", "nous": "avons compris", "vous": "avez compris", "ils": "ont compris" }
+    }
+  },
+  {
+    "infinitive": "surprendre",
+    "translation": "überraschen",
+    "irregularities": ["stem_change"],
+    "conjugations": {
+      "present": { "je": "surprends", "tu": "surprends", "il": "surprend", "nous": "surprenons", "vous": "surprenez", "ils": "surprennent" },
+      "imparfait": { "je": "surprenais", "tu": "surprenais", "il": "surprenait", "nous": "surprenions", "vous": "surpreniez", "ils": "surprenaient" },
+      "passe_compose": { "je": "ai surpris", "tu": "as surpris", "il": "a surpris", "nous": "avons surpris", "vous": "avez surpris", "ils": "ont surpris" }
+    }
+  },
+  {
+    "infinitive": "promettre",
+    "translation": "versprechen",
+    "irregularities": ["irregular_conjugation"],
+    "conjugations": {
+      "present": { "je": "promets", "tu": "promets", "il": "promet", "nous": "promettons", "vous": "promettez", "ils": "promettent" },
+      "imparfait": { "je": "promettais", "tu": "promettais", "il": "promettait", "nous": "promettions", "vous": "promettiez", "ils": "promettaient" },
+      "passe_compose": { "je": "ai promis", "tu": "as promis", "il": "a promis", "nous": "avons promis", "vous": "avez promis", "ils": "ont promis" }
+    }
+  },
+  {
+    "infinitive": "mettre",
+    "translation": "legen/stellen",
+    "irregularities": ["irregular_conjugation"],
+    "conjugations": {
+      "present": { "je": "mets", "tu": "mets", "il": "met", "nous": "mettons", "vous": "mettez", "ils": "mettent" },
+      "imparfait": { "je": "mettais", "tu": "mettais", "il": "mettait", "nous": "mettions", "vous": "mettiez", "ils": "mettaient" },
+      "passe_compose": { "je": "ai mis", "tu": "as mis", "il": "a mis", "nous": "avons mis", "vous": "avez mis", "ils": "ont mis" }
+    }
+  },
+  {
+    "infinitive": "battre",
+    "translation": "schlagen",
+    "irregularities": ["irregular_conjugation"],
+    "conjugations": {
+      "present": { "je": "bats", "tu": "bats", "il": "bat", "nous": "battons", "vous": "battez", "ils": "battent" },
+      "imparfait": { "je": "battais", "tu": "battais", "il": "battait", "nous": "battions", "vous": "battiez", "ils": "battaient" },
+      "passe_compose": { "je": "ai battu", "tu": "as battu", "il": "a battu", "nous": "avons battu", "vous": "avez battu", "ils": "ont battu" }
+    }
+  },
+  {
+    "infinitive": "connaître",
+    "translation": "kennen (Person/Ort)",
+    "irregularities": ["stem_change"],
+    "conjugations": {
+      "present": { "je": "connais", "tu": "connais", "il": "connaît", "nous": "connaissons", "vous": "connaissez", "ils": "connaissent" },
+      "imparfait": { "je": "connaissais", "tu": "connaissais", "il": "connaissait", "nous": "connaissions", "vous": "connaissiez", "ils": "connaissaient" },
+      "passe_compose": { "je": "ai connu", "tu": "as connu", "il": "a connu", "nous": "avons connu", "vous": "avez connu", "ils": "ont connu" }
+    }
+  },
+  {
+    "infinitive": "naître",
+    "translation": "geboren werden",
+    "irregularities": ["etre_auxiliary", "stem_change"],
+    "conjugations": {
+      "present": { "je": "nais", "tu": "nais", "il": "naît", "nous": "naissons", "vous": "naissez", "ils": "naissent" },
+      "imparfait": { "je": "naissais", "tu": "naissais", "il": "naissait", "nous": "naissions", "vous": "naissiez", "ils": "naissaient" },
+      "passe_compose": { "je": "suis né(e)", "tu": "es né(e)", "il": "est né", "nous": "sommes né(e)s", "vous": "êtes né(e)(s)", "ils": "sont né(s)" }
+    }
+  },
+  {
+    "infinitive": "lire",
+    "translation": "lesen",
+    "irregularities": ["irregular_conjugation"],
+    "conjugations": {
+      "present": { "je": "lis", "tu": "lis", "il": "lit", "nous": "lisons", "vous": "lisez", "ils": "lisent" },
+      "imparfait": { "je": "lisais", "tu": "lisais", "il": "lisait", "nous": "lisions", "vous": "lisiez", "ils": "lisaient" },
+      "passe_compose": { "je": "ai lu", "tu": "as lu", "il": "a lu", "nous": "avons lu", "vous": "avez lu", "ils": "ont lu" }
+    }
+  },
+  {
+    "infinitive": "boire",
+    "translation": "trinken",
+    "irregularities": ["stem_change"],
+    "conjugations": {
+      "present": { "je": "bois", "tu": "bois", "il": "boit", "nous": "buvons", "vous": "buvez", "ils": "boivent" },
+      "imparfait": { "je": "buvais", "tu": "buvais", "il": "buvait", "nous": "buvions", "vous": "buviez", "ils": "buvaient" },
+      "passe_compose": { "je": "ai bu", "tu": "as bu", "il": "a bu", "nous": "avons bu", "vous": "avez bu", "ils": "ont bu" }
+    }
+  },
+  {
+    "infinitive": "vivre",
+    "translation": "leben",
+    "irregularities": ["irregular_conjugation"],
+    "conjugations": {
+      "present": { "je": "vis", "tu": "vis", "il": "vit", "nous": "vivons", "vous": "vivez", "ils": "vivent" },
+      "imparfait": { "je": "vivais", "tu": "vivais", "il": "vivait", "nous": "vivions", "vous": "viviez", "ils": "vivaient" },
+      "passe_compose": { "je": "ai vécu", "tu": "as vécu", "il": "a vécu", "nous": "avons vécu", "vous": "avez vécu", "ils": "ont vécu" }
+    }
+  },
+  {
+    "infinitive": "plaire",
+    "translation": "gefallen",
+    "irregularities": ["stem_change"],
+    "conjugations": {
+      "present": { "je": "plais", "tu": "plais", "il": "plaît", "nous": "plaisons", "vous": "plaisez", "ils": "plaisent" },
+      "imparfait": { "je": "plaisais", "tu": "plaisais", "il": "plaisait", "nous": "plaisions", "vous": "plaisiez", "ils": "plaisaient" },
+      "passe_compose": { "je": "ai plu", "tu": "as plu", "il": "a plu", "nous": "avons plu", "vous": "avez plu", "ils": "ont plu" }
+    }
+  },
+  {
+    "infinitive": "croire",
+    "translation": "glauben",
+    "irregularities": ["stem_change"],
+    "conjugations": {
+      "present": { "je": "crois", "tu": "crois", "il": "croit", "nous": "croyons", "vous": "croyez", "ils": "croient" },
+      "imparfait": { "je": "croyais", "tu": "croyais", "il": "croyait", "nous": "croyions", "vous": "croyiez", "ils": "croyaient" },
+      "passe_compose": { "je": "ai cru", "tu": "as cru", "il": "a cru", "nous": "avons cru", "vous": "avez cru", "ils": "ont cru" }
+    }
+  },
+  {
+    "infinitive": "rire",
+    "translation": "lachen",
+    "irregularities": ["irregular_conjugation"],
+    "conjugations": {
+      "present": { "je": "ris", "tu": "ris", "il": "rit", "nous": "rions", "vous": "riez", "ils": "rient" },
+      "imparfait": { "je": "riais", "tu": "riais", "il": "riait", "nous": "riions", "vous": "riiez", "ils": "riaient" },
+      "passe_compose": { "je": "ai ri", "tu": "as ri", "il": "a ri", "nous": "avons ri", "vous": "avez ri", "ils": "ont ri" }
+    }
+  },
+  {
+    "infinitive": "sourire",
+    "translation": "lächeln",
+    "irregularities": ["irregular_conjugation"],
+    "conjugations": {
+      "present": { "je": "souris", "tu": "souris", "il": "sourit", "nous": "sourions", "vous": "souriez", "ils": "sourient" },
+      "imparfait": { "je": "souriais", "tu": "souriais", "il": "souriait", "nous": "souriions", "vous": "souriiez", "ils": "souriait" },
+      "passe_compose": { "je": "ai souri", "tu": "as souri", "il": "a souri", "nous": "avons souri", "vous": "avez souri", "ils": "ont souri" }
+    }
+  },
+  {
+    "infinitive": "suivre",
+    "translation": "folgen",
+    "irregularities": ["irregular_conjugation"],
+    "conjugations": {
+      "present": { "je": "suis", "tu": "suis", "il": "suit", "nous": "suivons", "vous": "suivez", "ils": "suivent" },
+      "imparfait": { "je": "suivais", "tu": "suivais", "il": "suivait", "nous": "suivions", "vous": "suiviez", "ils": "suivaient" },
+      "passe_compose": { "je": "ai suivi", "tu": "as suivi", "il": "a suivi", "nous": "avons suivi", "vous": "avez suivi", "ils": "ont suivi" }
+    }
+  },
+  {
+    "infinitive": "pleuvoir",
+    "translation": "regnen",
+    "irregularities": ["impersonal"],
+    "conjugations": {
+      "present": { "il": "pleut" },
+      "imparfait": { "il": "pleuvait" },
+      "passe_compose": { "il": "a plu" }
+    }
+  },
+  {
+    "infinitive": "voir",
+    "translation": "sehen",
+    "irregularities": ["stem_change"],
+    "conjugations": {
+      "present": { "je": "vois", "tu": "vois", "il": "voit", "nous": "voyons", "vous": "voyez", "ils": "voient" },
+      "imparfait": { "je": "voyais", "tu": "voyais", "il": "voyait", "nous": "voyions", "vous": "voyiez", "ils": "voyaient" },
+      "passe_compose": { "je": "ai vu", "tu": "as vu", "il": "a vu", "nous": "avons vu", "vous": "avez vu", "ils": "ont vu" }
+    }
+  },
+  {
+    "infinitive": "savoir",
+    "translation": "wissen",
+    "irregularities": ["irregular_conjugation"],
+    "conjugations": {
+      "present": { "je": "sais", "tu": "sais", "il": "sait", "nous": "savons", "vous": "savez", "ils": "savent" },
+      "imparfait": { "je": "savais", "tu": "savais", "il": "savait", "nous": "savions", "vous": "saviez", "ils": "savaient" },
+      "passe_compose": { "je": "ai su", "tu": "as su", "il": "a su", "nous": "avons su", "vous": "avez su", "ils": "ont su" }
+    }
+  },
+  {
+    "infinitive": "devoir",
+    "translation": "müssen",
+    "irregularities": ["irregular_conjugation"],
+    "conjugations": {
+      "present": { "je": "dois", "tu": "dois", "il": "doit", "nous": "devons", "vous": "devez", "ils": "doivent" },
+      "imparfait": { "je": "devais", "tu": "devais", "il": "devait", "nous": "devions", "vous": "deviez", "ils": "devaient" },
+      "passe_compose": { "je": "ai dû", "tu": "as dû", "il": "a dû", "nous": "avons dû", "vous": "avez dû", "ils": "ont dû" }
+    }
+  },
+  {
+    "infinitive": "pouvoir",
+    "translation": "können",
+    "irregularities": ["irregular_conjugation"],
+    "conjugations": {
+      "present": { "je": "peux", "tu": "peux", "il": "peut", "nous": "pouvons", "vous": "pouvez", "ils": "peuvent" },
+      "imparfait": { "je": "pouvais", "tu": "pouvais", "il": "pouvait", "nous": "pouvions", "vous": "pouviez", "ils": "pouvaient" },
+      "passe_compose": { "je": "ai pu", "tu": "as pu", "il": "a pu", "nous": "avons pu", "vous": "avez pu", "ils": "ont pu" }
+    }
+  },
+  {
+    "infinitive": "vouloir",
+    "translation": "wollen",
+    "irregularities": ["irregular_conjugation"],
+    "conjugations": {
+      "present": { "je": "veux", "tu": "veux", "il": "veut", "nous": "voulons", "vous": "voulez", "ils": "veulent" },
+      "imparfait": { "je": "voulais", "tu": "voulais", "il": "voulait", "nous": "voulions", "vous": "vouliez", "ils": "voulaient" },
+      "passe_compose": { "je": "ai voulu", "tu": "as voulu", "il": "a voulu", "nous": "avons voulu", "vous": "avez voulu", "ils": "ont voulu" }
+    }
+  },
+  {
+    "infinitive": "falloir",
+    "translation": "müssen (unpersönlich)",
+    "irregularities": ["impersonal"],
+    "conjugations": {
+      "present": { "il": "faut" },
+      "imparfait": { "il": "fallait" },
+      "passe_compose": { "il": "a fallu" }
+    }
+  },
+  {
+    "infinitive": "valoir",
+    "translation": "wert sein",
+    "irregularities": ["irregular_conjugation"],
+    "conjugations": {
+      "present": { "je": "vaux", "tu": "vaux", "il": "vaut", "nous": "valons", "vous": "valez", "ils": "valent" },
+      "imparfait": { "je": "valais", "tu": "valais", "il": "valait", "nous": "valions", "vous": "valiez", "ils": "valaient" },
+      "passe_compose": { "je": "ai valu", "tu": "as valu", "il": "a valu", "nous": "avons valu", "vous": "avez valu", "ils": "ont valu" }
+    }
+  },
+  {
+    "infinitive": "s'asseoir",
+    "translation": "sich setzen",
+    "irregularities": ["reflexive", "etre_auxiliary", "stem_change"],
+    "conjugations": {
+      "present": { "je": "m'assieds", "tu": "t'assieds", "il": "s'assied", "nous": "nous asseyons", "vous": "vous asseyez", "ils": "s'asseyent" },
+      "imparfait": { "je": "m'asseyais", "tu": "t'asseyais", "il": "s'asseyait", "nous": "nous asseyions", "vous": "vous asseyiez", "ils": "s'asseyaient" },
+      "passe_compose": { "je": "me suis assis(e)", "tu": "t'es assis(e)", "il": "s'est assis", "nous": "nous sommes assis(e)s", "vous": "vous êtes assis(e)(s)", "ils": "se sont assis(s)" }
+    }
+  },
+  {
+    "infinitive": "recevoir",
+    "translation": "erhalten",
+    "irregularities": ["stem_change"],
+    "conjugations": {
+      "present": { "je": "reçois", "tu": "reçois", "il": "reçoit", "nous": "recevons", "vous": "recevez", "ils": "reçoivent" },
+      "imparfait": { "je": "recevais", "tu": "recevais", "il": "recevait", "nous": "recevions", "vous": "receviez", "ils": "recevaient" },
+      "passe_compose": { "je": "ai reçu", "tu": "as reçu", "il": "a reçu", "nous": "avons reçu", "vous": "avez reçu", "ils": "ont reçu" }
+    }
+  },
+  {
+    "infinitive": "remplir",
+    "translation": "füllen",
+    "irregularities": [],
+    "conjugations": {
+      "present": { "je": "remplis", "tu": "remplis", "il": "remplit", "nous": "remplissons", "vous": "remplissez", "ils": "remplissent" },
+      "imparfait": { "je": "remplissais", "tu": "remplissais", "il": "remplissait", "nous": "remplissions", "vous": "remplissiez", "ils": "remplissaient" },
+      "passe_compose": { "je": "ai rempli", "tu": "as rempli", "il": "a rempli", "nous": "avons rempli", "vous": "avez rempli", "ils": "ont rempli" }
+    }
+  },
+  {
+    "infinitive": "grandir",
+    "translation": "wachsen",
+    "irregularities": [],
+    "conjugations": {
+      "present": { "je": "grandis", "tu": "grandis", "il": "grandit", "nous": "grandissons", "vous": "grandissez", "ils": "grandissent" },
+      "imparfait": { "je": "grandissais", "tu": "grandissais", "il": "grandissait", "nous": "grandissions", "vous": "grandissiez", "ils": "grandissaient" },
+      "passe_compose": { "je": "ai grandi", "tu": "as grandi", "il": "a grandi", "nous": "avons grandi", "vous": "avez grandi", "ils": "ont grandi" }
+    }
+  },
+  {
+    "infinitive": "grossir",
+    "translation": "zunehmen",
+    "irregularities": [],
+    "conjugations": {
+      "present": { "je": "grossis", "tu": "grossis", "il": "grossit", "nous": "grossissons", "vous": "grossissez", "ils": "grossissent" },
+      "imparfait": { "je": "grossissais", "tu": "grossissais", "il": "grossissait", "nous": "grossissions", "vous": "grossissiez", "ils": "grossissaient" },
+      "passe_compose": { "je": "ai grossi", "tu": "as grossi", "il": "a grossi", "nous": "avons grossi", "vous": "avez grossi", "ils": "ont grossi" }
+    }
+  },
+  {
+    "infinitive": "réfléchir",
+    "translation": "nachdenken",
+    "irregularities": [],
+    "conjugations": {
+      "present": { "je": "réfléchis", "tu": "réfléchis", "il": "réfléchit", "nous": "réfléchissons", "vous": "réfléchissez", "ils": "réfléchissent" },
+      "imparfait": { "je": "réfléchissais", "tu": "réfléchissais", "il": "réfléchissait", "nous": "réfléchions", "vous": "réfléchissiez", "ils": "réfléchissaient" },
+      "passe_compose": { "je": "ai réfléchi", "tu": "as réfléchi", "il": "a réfléchi", "nous": "avons réfléchi", "vous": "avez réfléchi", "ils": "ont réfléchi" }
+    }
+  },
+  {
+    "infinitive": "rougir",
+    "translation": "erröten",
+    "irregularities": [],
+    "conjugations": {
+      "present": { "je": "rougis", "tu": "rougis", "il": "rougit", "nous": "rougissons", "vous": "rougissez", "ils": "rougissent" },
+      "imparfait": { "je": "rougissais", "tu": "rougissais", "il": "rougissait", "nous": "rougissions", "vous": "rougissiez", "ils": "rougissaient" },
+      "passe_compose": { "je": "ai rougi", "tu": "as rougi", "il": "a rougi", "nous": "avons rougi", "vous": "avez rougi", "ils": "ont rougi" }
+    }
+  },
+  {
+    "infinitive": "vieillir",
+    "translation": "altern",
+    "irregularities": [],
+    "conjugations": {
+      "present": { "je": "vieillis", "tu": "vieillis", "il": "vieillit", "nous": "vieillissons", "vous": "vieillissez", "ils": "vieillissent" },
+      "imparfait": { "je": "vieillissais", "tu": "vieillissais", "il": "vieillissait", "nous": "vieillissions", "vous": "vieillissiez", "ils": "vieillissaient" },
+      "passe_compose": { "je": "ai vieilli", "tu": "as vieilli", "il": "a vieilli", "nous": "avons vieilli", "vous": "avez vieilli", "ils": "ont vieilli" }
+    }
+  },
+  {
+    "infinitive": "dormir",
+    "translation": "schlafen",
+    "irregularities": ["stem_change"],
+    "conjugations": {
+      "present": { "je": "dors", "tu": "dors", "il": "dort", "nous": "dormons", "vous": "dormez", "ils": "dorment" },
+      "imparfait": { "je": "dormais", "tu": "dormais", "il": "dormait", "nous": "dormions", "vous": "dormiez", "ils": "dormaient" },
+      "passe_compose": { "je": "ai dormi", "tu": "as dormi", "il": "a dormi", "nous": "avons dormi", "vous": "avez dormi", "ils": "ont dormi" }
+    }
+  },
+  {
+    "infinitive": "partir",
+    "translation": "weggehen",
+    "irregularities": ["etre_auxiliary", "stem_change"],
+    "conjugations": {
+      "present": { "je": "pars", "tu": "pars", "il": "part", "nous": "partons", "vous": "partez", "ils": "partent" },
+      "imparfait": { "je": "partais", "tu": "partais", "il": "partait", "nous": "partions", "vous": "partiez", "ils": "partaient" },
+      "passe_compose": { "je": "suis parti(e)", "tu": "es parti(e)", "il": "est parti", "nous": "sommes parti(e)s", "vous": "êtes parti(e)(s)", "ils": "sont parti(s)" }
+    }
+  },
+  {
+    "infinitive": "sortir",
+    "translation": "ausgehen",
+    "irregularities": ["etre_auxiliary", "stem_change"],
+    "conjugations": {
+      "present": { "je": "sors", "tu": "sors", "il": "sort", "nous": "sortons", "vous": "sortez", "ils": "sortent" },
+      "imparfait": { "je": "sortais", "tu": "sortais", "il": "sortait", "nous": "sortions", "vous": "sortiez", "ils": "sortaient" },
+      "passe_compose": { "je": "suis sorti(e)", "tu": "es sorti(e)", "il": "est sorti", "nous": "sommes sorti(e)s", "vous": "êtes sorti(e)(s)", "ils": "sont sorti(s)" }
+    }
+  },
+  {
+    "infinitive": "mentir",
+    "translation": "lügen",
+    "irregularities": ["stem_change"],
+    "conjugations": {
+      "present": { "je": "mens", "tu": "mens", "il": "ment", "nous": "mentons", "vous": "mentez", "ils": "mentent" },
+      "imparfait": { "je": "mentais", "tu": "mentais", "il": "mentait", "nous": "mentions", "vous": "mentiez", "ils": "mentaient" },
+      "passe_compose": { "je": "ai menti", "tu": "as menti", "il": "a menti", "nous": "avons menti", "vous": "avez menti", "ils": "ont menti" }
+    }
+  },
+  {
+    "infinitive": "sentir",
+    "translation": "fühlen",
+    "irregularities": ["stem_change"],
+    "conjugations": {
+      "present": { "je": "sens", "tu": "sens", "il": "sent", "nous": "sentons", "vous": "sentez", "ils": "sentent" },
+      "imparfait": { "je": "sentais", "tu": "sentais", "il": "sentait", "nous": "sentions", "vous": "sentiez", "ils": "sentaient" },
+      "passe_compose": { "je": "ai senti", "tu": "as senti", "il": "a senti", "nous": "avons senti", "vous": "avez senti", "ils": "ont senti" }
+    }
+  },
+  {
+    "infinitive": "servir",
+    "translation": "dienen",
+    "irregularities": ["stem_change"],
+    "conjugations": {
+      "present": { "je": "sers", "tu": "sers", "il": "sert", "nous": "servons", "vous": "servez", "ils": "servent" },
+      "imparfait": { "je": "servais", "tu": "servais", "il": "servait", "nous": "servions", "vous": "serviez", "ils": "servaient" },
+      "passe_compose": { "je": "ai servi", "tu": "as servi", "il": "a servi", "nous": "avons servi", "vous": "avez servi", "ils": "ont servi" }
+    }
+  }
+]
