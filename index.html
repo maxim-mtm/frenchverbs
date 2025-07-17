@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Französisch-Verben-Quiz</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Custom styles for better aesthetics */
@@ -218,7 +217,6 @@
             Teste dein Wissen über französische Verbkonjugationen!
         </p>
 
-        <!-- Quiz Setup Screen -->
         <div id="quizSetupScreen" class="">
             <h2 class="text-2xl font-bold text-gray-700 mb-4">Quiz-Einstellungen</h2>
             <div class="flex flex-col md:flex-row justify-center items-start gap-6 mb-8">
@@ -244,7 +242,6 @@
                 </div>
             </div>
 
-            <!-- Seed Input -->
             <div class="mb-6">
                 <label for="seedInput" class="block text-gray-700 text-sm font-bold mb-2">
                     Seed für Verbengruppen (optional):
@@ -262,12 +259,10 @@
             </div>
 
 
-            <!-- Feedback for setup screen -->
             <div id="setupFeedback" class="text-center text-xl font-bold mb-6"></div>
 
             <button id="startQuizBtn" class="btn btn-success w-full mb-6">Quiz starten</button>
 
-            <!-- Progress Display -->
             <div id="progressDisplay" class="bg-gray-100 p-6 rounded-lg text-gray-700 shadow-inner">
                 <h3 class="text-xl font-semibold mb-3">Dein Fortschritt:</h3>
                 <p class="mb-1">Insgesamt beantwortete Fragen: <span id="totalAnswered" class="font-bold text-gray-900">0</span></p>
@@ -278,7 +273,6 @@
             </div>
         </div>
 
-        <!-- Quiz Screen -->
         <div id="quizScreen" class="hidden">
             <h2 class="text-2xl font-bold text-gray-700 mb-4">Quiz läuft</h2>
             <div class="bg-blue-50 p-8 rounded-lg text-center mb-6 shadow-md">
@@ -288,7 +282,6 @@
                 <p id="quizTense" class="text-2xl font-semibold text-blue-700 mb-4"></p>
             </div>
 
-            <!-- Progress Bar -->
             <div class="w-full bg-gray-200 rounded-full h-4 mb-6">
                 <div id="progressBar" class="bg-blue-600 h-4 rounded-full text-xs flex items-center justify-center text-white" style="width: 0%;">
                     <span id="progressBarText">0%</span>
@@ -311,14 +304,12 @@
         </div>
     </div>
 
-    <!-- Verb Group Info Modal -->
     <div id="verbGroupInfoModal" class="modal-overlay hidden">
         <div class="modal-content">
             <button class="modal-close-btn" id="closeVerbGroupInfoModal">&times;</button>
             <h3 class="text-2xl font-bold text-gray-800 mb-4">Verben in der aktuellen Gruppe</h3>
             <ul id="verbList" class="list-disc list-inside text-left text-gray-700">
-                <!-- Verb list will be populated here by JavaScript -->
-            </ul>
+                </ul>
             <p class="text-sm text-gray-600 mt-4">
                 Ein Verb gilt als gemeistert, wenn es <span class="font-bold">${REQUIRED_MASTERY_COUNT}</span> Mal richtig beantwortet wurde.
             </p>
@@ -374,7 +365,7 @@
                 while (currentIndex !== 0) {
                     randomIndex = Math.floor(this.next() * currentIndex);
                     currentIndex--;
-                    [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+                    [array[currentIndex], array[randomIndex]] = [array[currentIndex], array[randomIndex]];
                 }
                 return array;
             }
@@ -416,6 +407,8 @@
         const closeVerbGroupInfoModalBtn = document.getElementById('closeVerbGroupInfoModal');
         const verbListUl = document.getElementById('verbList');
 
+        // Global variable to store the French voice for Web Speech API
+        let frenchVoice = null;
 
         // --- Utility Functions ---
 
@@ -560,7 +553,11 @@
                     // Check if all verbs from verbsData are present in the parsed groups
                     const allVerbsPresent = verbsData.every(verb => parsedGroups.flat().includes(verb.infinitive));
 
-                    if (totalVerbsInStoredGroups === verbsData.length && allVerbsPresent) {
+                    // Add check for GROUP_SIZE consistency
+                    const firstGroupSize = parsedGroups.length > 0 ? parsedGroups[0].length : 0;
+                    const groupSizeConsistent = parsedGroups.every(group => group.length <= GROUP_SIZE); // Last group might be smaller
+
+                    if (totalVerbsInStoredGroups === verbsData.length && allVerbsPresent && groupSizeConsistent) {
                         learningState.verbGroups = parsedGroups;
                         learningState.currentLearningGroupIndex = parseInt(storedCurrentGroupIndex, 10);
                         learningState.seed = storedSeed; // Load the seed into learningState
@@ -568,7 +565,7 @@
                         needsReinitialization = false;
                         console.log("Loaded existing verb groups with seed:", effectiveSeed);
                     } else {
-                        console.warn("Stored verb groups are inconsistent, re-initializing.");
+                        console.warn("Stored verb groups are inconsistent (e.g., size changed or verbs missing), re-initializing.");
                     }
                 } catch (e) {
                     console.error("Error parsing stored verb groups or seed:", e);
@@ -908,12 +905,26 @@
             nextVerbBtn.classList.remove('hidden');
         }
 
-        /**
-         * Moves to the next verb in the quiz.
-         */
-        function nextVerb() {
-            currentVerbIndex++;
-            displayQuestion(); // Just call displayQuestion to get the next dynamic question
+        // Function to find and set the French voice for Web Speech API
+        function setFrenchVoice() {
+            const voices = speechSynthesis.getVoices();
+            // Try to find a French voice, prioritizing common system voices like 'Thomas', 'Amelie', or 'Samantha'
+            frenchVoice = voices.find(voice => voice.lang === 'fr-FR' && voice.name.includes('Thomas')) ||
+                        voices.find(voice => voice.lang === 'fr-FR' && voice.name.includes('Amelie')) ||
+                        voices.find(voice => voice.lang === 'fr-FR' && voice.name.includes('Samantha')) ||
+                        voices.find(voice => voice.lang === 'fr-FR'); // Fallback to any fr-FR voice
+            if (!frenchVoice) {
+                console.warn("No 'fr-FR' voice found. Speech synthesis might use default or fail.");
+            } else {
+                console.log("French voice loaded:", frenchVoice.name);
+            }
+        }
+
+        // Event listener for voices changed (crucial for iOS and some browsers)
+        if ('speechSynthesis' in window) {
+            speechSynthesis.onvoiceschanged = setFrenchVoice;
+            // Call immediately if voices are already loaded (e.g., on desktop)
+            setFrenchVoice();
         }
 
         /**
@@ -928,6 +939,9 @@
                 }
                 const utterance = new SpeechSynthesisUtterance(text);
                 utterance.lang = 'fr-FR';
+                if (frenchVoice) { // Use the specific French voice if found
+                    utterance.voice = frenchVoice;
+                }
                 speechSynthesis.speak(utterance);
             } else {
                 const messageBox = document.createElement('div');
@@ -941,6 +955,14 @@
                 `;
                 document.body.appendChild(messageBox);
             }
+        }
+
+        /**
+         * Moves to the next verb in the quiz.
+         */
+        function nextVerb() {
+            currentVerbIndex++;
+            displayQuestion(); // Just call displayQuestion to get the next dynamic question
         }
 
         /**
