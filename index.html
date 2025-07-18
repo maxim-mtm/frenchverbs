@@ -365,7 +365,7 @@
                 while (currentIndex !== 0) {
                     randomIndex = Math.floor(this.next() * currentIndex);
                     currentIndex--;
-                    [array[currentIndex], array[randomIndex]] = [array[currentIndex], array[randomIndex]];
+                    [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
                 }
                 return array;
             }
@@ -615,11 +615,12 @@
         }
 
         /**
-         * Fetches verb data from verbs.json.
+         * Fetches verb data from the specified URL.
          */
         async function fetchVerbsData() {
             try {
-                const response = await fetch('verbs.json');
+                // Use the provided URL for verbs.json
+                const response = await fetch('https://maxim-mtm.github.io/frenchverbs/verbs.json');
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
@@ -631,7 +632,7 @@
             } catch (error) {
                 console.error('Error fetching verbs data:', error);
                 if (quizSetupScreen) {
-                    setupFeedbackDiv.textContent = 'Fehler beim Laden der Verben. Bitte stelle sicher, dass verbs.json im selben Verzeichnis liegt.';
+                    setupFeedbackDiv.textContent = 'Fehler beim Laden der Verben. Bitte stelle sicher, dass verbs.json unter der korrekten URL verfügbar ist.';
                     setupFeedbackDiv.classList.add('feedback-wrong');
                 }
             }
@@ -828,7 +829,26 @@
 
             quizInfinitive.textContent = `${currentQuestion.translation}`;
             quizTense.textContent = formatTenseName(currentQuestion.tense);
-            quizPronounPrefix.textContent = formatPronoun(currentQuestion.pronoun);
+
+            // Dynamically set quizPronounPrefix to 'J'' if applicable
+            if (currentQuestion.pronoun === 'je') {
+                const verb = verbsData.find(v => v.infinitive === currentQuestion.infinitive);
+                if (verb) {
+                    const conjugation = verb.conjugations[currentQuestion.tense][currentQuestion.pronoun];
+                    const firstLetterOfConjugation = conjugation.charAt(0).toLowerCase();
+                    const isVowelOrSilentH = ['a', 'e', 'i', 'o', 'u', 'h'].includes(firstLetterOfConjugation);
+                    if (isVowelOrSilentH) {
+                        quizPronounPrefix.textContent = `J'`;
+                    } else {
+                        quizPronounPrefix.textContent = formatPronoun(currentQuestion.pronoun);
+                    }
+                } else {
+                    quizPronounPrefix.textContent = formatPronoun(currentQuestion.pronoun); // Fallback
+                }
+            } else {
+                quizPronounPrefix.textContent = formatPronoun(currentQuestion.pronoun);
+            }
+
 
             answerInput.value = '';
             feedbackDiv.textContent = '';
@@ -945,7 +965,7 @@
                 speechSynthesis.speak(utterance);
             } else {
                 const messageBox = document.createElement('div');
-                messageBox.className = 'fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50';
+                messageBox.className = 'fixed inset-0 bg-gray-600 bg-opacity50 flex items-center justify-center z-50';
                 messageBox.innerHTML = `
                     <div class="modal-box">
                         <p class="text-lg font-semibold mb-4">Browser-Funktion nicht unterstützt</p>
